@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Number Bomb Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-animation"></div>
+
+<div class="game-card">
+    <h1>💣 Neon Number Bomb</h1>
+
+    <div class="difficulty-box">
+        <button onclick="setDifficulty('easy')">Easy</button>
+        <button onclick="setDifficulty('normal')">Normal</button>
+        <button onclick="setDifficulty('hard')">Hard</button>
+    </div>
+
+    <h2 id="rangeText">範圍：1 ~ 100</h2>
+
+    <div class="danger-container">
+        <div id="dangerBar"></div>
+    </div>
+
+    <input type="number" id="guessInput" placeholder="輸入你的數字">
+
+    <button class="guess-btn" onclick="guessNumber()">猜！</button>
+
+    <p id="message">開始你的挑戰吧！</p>
+
+    <div class="info-box">
+        <p>步數：<span id="steps">0</span></p>
+        <p>分數：<span id="score">1000</span></p>
+    </div>
+
+    <button class="restart-btn" onclick="restartGame()">重新開始</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
